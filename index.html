@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html  ng-app="aixianfeng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>爱鲜蜂</title>
+    <link rel="stylesheet" href="libs/com.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="libs/swiper-3.4.2.min-1.css">
+
+    <script src="libs/angular.js"></script>
+    <script src="libs/angular-route.js"></script>
+    <script src="libs/angular-css.min.js"></script>
+    <script src="libs/swiper-3.4.2.jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="components/home/home.js" type="text/javascript" charset="utf-8"></script>
+    <script src="components/category/category.js" type="text/javascript" charset="utf-8"></script>
+    <script src="components/shopcar/shopcar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="components/mine/mine.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id="wrap">
+    <div id="top">凌家山</div>
+    <div id="main" ng-view=""></div>
+    <div id="tab">
+        <ul>
+            <li>
+                <a href="#home">首页</a>
+            </li>
+            <li>
+                <a href="#category">闪送超市</a>
+            </li>
+            <li>
+                <a href="#shopcar">购物车</a>
+            </li>
+            <li>
+                <a href="#mine">我的</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
